@@ -1,0 +1,101 @@
+object Form1: TForm1
+  Left = 390
+  Top = 286
+  Width = 582
+  Height = 208
+  Caption = 'Criptografia'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 21
+    Width = 176
+    Height = 13
+    Caption = 'Arquivo para gera'#231#227'o da Criptografia:'
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 439
+    Top = 39
+    Width = 29
+    Height = 22
+    Caption = '...'
+    OnClick = SpeedButton2Click
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 105
+    Width = 81
+    Height = 13
+    Caption = 'Tempo Encriptar:'
+  end
+  object lbTempo: TLabel
+    Left = 113
+    Top = 105
+    Width = 18
+    Height = 13
+    Caption = '......'
+  end
+  object Label3: TLabel
+    Left = 23
+    Top = 123
+    Width = 87
+    Height = 13
+    Caption = 'Tempo Descriptar:'
+  end
+  object lbTempoDes: TLabel
+    Left = 112
+    Top = 123
+    Width = 18
+    Height = 13
+    Caption = '......'
+  end
+  object editArquivoOrigem: TEdit
+    Left = 24
+    Top = 40
+    Width = 409
+    Height = 21
+    TabOrder = 0
+    Text = 'C:\documenta'#231#227'oFuncoes.txt'
+  end
+  object btnProcesso: TBitBtn
+    Left = 24
+    Top = 66
+    Width = 137
+    Height = 25
+    Caption = 'Processar EndeCript'
+    TabOrder = 1
+    OnClick = btnProcessoClick
+  end
+  object BitBtn1: TBitBtn
+    Left = 167
+    Top = 65
+    Width = 137
+    Height = 25
+    Caption = 'Processar DesCript'
+    TabOrder = 2
+    OnClick = BitBtn1Click
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 512
+    Top = 16
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 488
+    Top = 80
+  end
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer2Timer
+    Left = 488
+    Top = 128
+  end
+end
